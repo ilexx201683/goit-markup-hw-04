@@ -19,6 +19,7 @@
   --portfolio-btn-accent-background-color: #2196f3;
   --header-border-color: #ececec;
   --portfolio-border-color: #eeeeee;
+  --footer-text-color: #ffffff;
 }
 
 p,
@@ -424,13 +425,68 @@ body {
   fill: #ffffff;
 }
 
-/* Футер */
+/* ------------------------Секция Постоянные клиенты------------ */
+.section-clients {
+  padding: 94px 0;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
+}
+
+/* ---------------------------Футер------------------------------- */
 .footer {
   background-color: var(--second-background-color);
   padding: 60px 0;
 }
 
-.footer-container .logo {
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-adress {
+  margin-right: 70px;
+}
+
+.footer-adress .logo {
   margin-bottom: 20px;
 }
 
@@ -466,6 +522,60 @@ body {
 .footer-contacts .contacts:hover,
 .footer-contacts .contacts:focus {
   color: var(--accent-color);
+}
+
+.footer-social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--footer-text-color);
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  width: 206px;
+  height: 80px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-icon {
+  fill: #ffffff;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-link:hover .team-social-icon,
+.footer-social-link:focus .team-social-icon {
+  fill: #ffffff;
 }
 
 /*------------------------------PORTFOLIO.HTML-----------------*/
