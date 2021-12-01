@@ -147,6 +147,7 @@ body {
 .button-works:focus {
   color: var(--portfolio-btn-accent-text-color);
   background-color: var(--portfolio-btn-accent-background-color);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 
@@ -607,6 +608,11 @@ body {
   flex-basis: calc((100% - 9 * 30px) / 9);
   margin-left: 30px;
   margin-bottom: 30px;
+}
+
+.cards-works-item:hover,
+.cards-works-item:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .cards-works-text {
